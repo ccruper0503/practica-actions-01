@@ -2,7 +2,9 @@ name: CI
 on:
   push:
     branches: [main]
-    workflow_dispatch:
+   pull_request:
+    branches: [main]
+   workflow_dispatch:
 jobs:
   saludo:
     runs-on: ubuntu-latest
